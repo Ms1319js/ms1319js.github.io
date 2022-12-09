@@ -1,0 +1,507 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u,
+i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+  
+
+bg {
+    background-image: url("bg.jpg");
+    width: 100%;
+}
+
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 0px ;
+  font-family: Arial;
+}
+
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  font-family: var(--font1);
+  display: flex;
+}
+
+.navbar {
+  margin-top: 5px;
+  font-family: var(--font1);
+  display: flex;
+  
+}
+
+
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 15px 16px;
+  margin-top: 09px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: var(--font3);
+  margin-top: 1px;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 16px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+  margin-top: 0%;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar :hover {
+  background-color: rgb(83, 181, 139);
+  margin-top: 0%;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+html {
+  line-height: 1;
+}
+
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  background-image:
+	  linear-gradient(
+		  to right,
+		  #7f7fd5, #86a8e7, #91eae4
+		);
+  text-align: center;
+  font-family: 'Google Sans', sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  padding: 0 1em;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ion-icon {
+  font-size: 25px;
+}
+
+.gap {
+  padding: 1em 0 0;
+}
+
+.padDown {
+  padding: 0.5em 0em 0.5em;
+}
+
+.mk-margin {
+  padding: 1em 0em 0em;
+}
+
+
+.master {
+  padding: 2em 0em 2em;
+}
+
+.outer {
+  padding: 10px;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.inner {
+  display: inline-block;
+  padding: 20px;
+}
+
+.avatar {
+  -moz-box-shadow: 0 0 0px 3px #fff, 0 0 0 4px #ccc, 0 4px 6px #333;
+  -webkit-box-shadow: 0 0 0px 3px #fff, 0 0 0 4px #ccc, 0 4px 6px #333;
+  box-shadow: 0 0 0px 3px #fff, 0 0 0 4px #ccc, 0 4px 6px #333;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+}
+
+.loadanimation {
+  animation: 1s ease-in-out both fadeInRight;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(300px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+.tile {
+  animation: .4s ease-in-out both fade-in;
+}
+
+.tile:nth-child(1) {
+  animation-delay: 1.35s;
+}
+
+.tile:nth-child(2) {
+  animation-delay: 1.5s;
+}
+
+.tile:nth-child(3) {
+  animation-delay: 1.65s;
+}
+
+.tile:nth-child(4) {
+  animation-delay: 1.8s;
+}
+
+.tile:nth-child(5) {
+  animation-delay: 1.95s;
+}
+
+.tile:nth-child(6) {
+  animation-delay: 2.1s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.social li {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin: .5em;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.social li:hover {
+  -moz-transform: scale(1.25, 1.25);
+  -ms-transform: scale(1.25, 1.25);
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+  color: white;
+}
+
+.social li:before {
+  position: absolute;
+  width: 2em;
+  margin-left: -1em;
+  top: 1.5em;
+  left: 50%;
+}
+
+.social li a {
+  display: block;
+  color: inherit;
+  padding: 1em 1em 1em;
+  width: 6em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.icon-resume {
+  color: #2616db;
+}
+
+.icon-resume:hover {
+  background: #e95950;
+}
+
+.icon-email {
+  color: #004f9f;
+}
+
+.icon-email:hover {
+  background: #004f9f;
+}
+
+.icon-twitter {
+  color: #1DA1F2
+}
+
+.icon-twitter:hover {
+  background: #1DA1F2
+}
+
+.icon-github {
+  color: #333;
+}
+
+.icon-github:hover {
+  background: #333;
+}
+.icon-web {
+  color: #333;
+}
+
+.icon-web:hover {
+  background: #333;
+}
+
+.icon-linkedin {
+  color: #0077b5;
+}
+
+.icon-linkedin:hover {
+  background: #0077b5;
+}
+
+.icon-instagram {
+  color: #af0ceb;
+}
+
+.icon-instagram:hover {
+  background: #cd486b;
+}
+
+.icon-telegram {
+  color: #0088cc
+}
+
+.icon-telegram:hover {
+  background: #0088cc
+}
+
+.icon-paypal {
+  color: #222d65
+}
+
+.icon-paypal:hover {
+  background: #222d65
+}
+
+.icon-transcript {
+  color: #ff7700;
+}
+
+.icon-transcript:hover {
+  background: #ff7700;
+}
+
+#spinf {
+  color: brown;
+}
+
+#spinf:after {
+  content: "";
+  animation: spinf 5.0s linear infinite;
+}
+
+@keyframes spinf {
+  50% {
+    content: "A Staunch Atheist";
+  }
+  90% {
+    content: "An Indian";
+  } 
+}
+
+#spin {
+  color: purple;
+}
+
+#spin:after {
+  content: "";
+  animation: spin 15.0s linear infinite;
+}
+
+@keyframes spin {
+  10% {
+    content: "A student";
+  }
+  20% {
+    content: "A ambidextrous";
+  }
+  30% {
+    content: " An  Allenite";
+  }
+  40% {
+    content: "An  ex-Vibrantian";
+  }
+  50% {
+    content: "An  ex-Davian";
+  }
+  60% {
+    content: "An  ex-Vibrantian";
+  }
+  70% {
+    content: "16";
+  }
+  80% {
+    content: "An  introvert";
+  }
+ 90% {
+    content: "A NEET  Aspirant";
+  }
+}
+
+.MyGallery > a {
+  display: inline-block;
+  height: auto;
+  width: 190px;
+  margin: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #DC143C;
+  color: white;
+  animation-delay: 2.3s;
+}
+ion-icon#Gallery {
+  float: left;
+  padding: 5px 0px 5px 10px;
+}
+.MyGallery > a > span {
+  float: right;
+  padding: 10px 10px 10px 5px;
+}
+
+.MyGallery > a:hover{
+  background-color: salmon;
+
+  -moz-transform: scale(1.25, 1.25);
+  -ms-transform: scale(1.25, 1.25);
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+item {
+	padding: 1em 2em;
+	background: rgba(50,50,50,0.5);
+	border: dashed 2px ;
+	border-color: cadetblue;
+	border-radius: 10px;
+
+
+}
+
+/* Footer */
+#footer {
+  left:0px;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  margin-bottom: 5px;
+}
