@@ -355,6 +355,23 @@ ion-icon {
   background: #333;
 }
 
+.icon-snapchat {
+  color: #E1E100;
+}
+
+.icon-snapchat:hover {
+  background: #E1E100;
+}
+
+
+.icon-whatsapp {
+  color: #6EEE6E;
+}
+
+.icon-whatsapp:hover {
+  background: #6EEE6E;
+}
+
 .icon-linkedin {
   color: #0077b5;
 }
